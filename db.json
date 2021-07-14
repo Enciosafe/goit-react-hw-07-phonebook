@@ -2,20 +2,20 @@
   "contacts": [
     {
       "name": "stas",
-      "number": "0986254200",
-      "id": "dc515ee7-e70c-47d6-b70d-52b6d14a7e68",
+      "number": "1241431",
+      "id": "31e041b8-444a-4211-a23a-899358092f2a",
       "sex": "male"
     },
     {
       "name": "yulia",
-      "number": "0986509927",
-      "id": "342f92c4-1eed-4468-b8c4-16492dbd527c",
-      "sex": "male"
+      "number": "112345123",
+      "id": "eff55986-7f32-40d4-8360-b074749c19d2",
+      "sex": "female"
     },
     {
-      "name": "kiril",
-      "number": "09647823112",
-      "id": "b9a24bac-2a2d-4769-8492-c41911d5f607",
+      "name": "lebid",
+      "number": "13513125123",
+      "id": "cbe033c3-aa5c-4e15-a9b0-f27eede9c92e",
       "sex": "male"
     }
   ]

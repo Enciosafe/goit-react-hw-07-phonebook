@@ -2,7 +2,7 @@ import React from "react";
 import InputForm from "./InputForm/InputForm";
 import {v4 as uuidv4} from "uuid";
 import {connect} from "react-redux";
-import contactOperations from './../../redux/contacts/contacts-operations'
+import { contactsOperations } from './../../redux/contacts'
 
 
 class ContactForm extends React.Component {
@@ -55,7 +55,7 @@ class ContactForm extends React.Component {
 }
 
 const mapDispatchToProps = dispatch => ({
-    onSubmit: (data) => dispatch(contactOperations.addContact(data))
+    onSubmit: (data) => dispatch(contactsOperations.addContact(data))
 })
 
 

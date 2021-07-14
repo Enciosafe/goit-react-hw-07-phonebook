@@ -5,6 +5,8 @@ import Filter from "./components/Filter/Filter";
 import PropTypes from "prop-types";
 import {connect} from "react-redux";
 import contactsOperations from './redux/contacts/contacts-operations'
+import contactSelectors from './redux/contacts/contacts-selectors'
+
 
 
 
@@ -22,15 +24,15 @@ class App extends React.Component {
         <h1>Phonebook</h1>
             <ContactForm contacts={this.props.contacts}/>
             <h2>Contacts</h2>
-            <Filter/>
+            {this.props.contacts.length > 1 && <Filter/>}
             <ContactList/>
         </>
   }
 }
 
 const mapStateToProps = state => ({
-    contacts: state.contacts.contacts,
-    filter: state.contacts.filter,
+    contacts: contactSelectors.getContacts(state),
+    filter: contactSelectors.getFilter(state),
 })
 
 
